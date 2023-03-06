@@ -69,6 +69,7 @@ article {
     vertical-align: top;
     background-color: var(--card-color);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 16px;
 }
 
 .article-content ul {
