@@ -2,12 +2,14 @@
 
 :root {
     --fontsize: 12px;
-    --bgcolor: #f4f0e6;
+    --bgcolor: black;
     --cardradius: 5px;
-    --card-color: #d9d9f3;
+    --card-color: #fff;
+    --card-border-color: #000;
     --card-nav-color: gray;
-    --header-logo-color: darkgray;
+    --header-logo-color: white;
     --article-color: black;
+    --article-fontsize: 16px;
     --selection-color: darkgray;
     --selection-bg-color: white;
 }
@@ -31,11 +33,33 @@ header {
     vertical-align: middle;
 }
 
+header nav ul {
+    display: inline-flex;
+    list-style-type: none;
+    color:white;
+    margin: 5;
+    padding: 20;
+}
+
+header nav li {
+   width: 60px
+}
+
+header nav li a {
+    text-decoration: none;
+    color: white
+}
+
+header nav li a::hover {
+    color:yellow;
+}
+
 section {
     display: inline-flex;
     flex-wrap: wrap;
     position: relative;
-    top: 51px;
+    top: 105px;
+    justify-content: center;
 }
 
 .main-content {
@@ -55,7 +79,7 @@ article {
     padding: 10px;
     margin: 10px;
     background: var(--card-color);
-    border: 1px solid var(--card-color);
+    border: 1px solid var(--card-border-color);
     width: 300px;
     height: 200px;
     display: flex;
@@ -69,7 +93,7 @@ article {
     vertical-align: top;
     background-color: var(--card-color);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 16px;
+    font-size: var(--article-fontsize);
 }
 
 .article-content ul {
@@ -86,13 +110,14 @@ article {
     padding: 0;
     font-size: x-large;
     color: var(--article-color);
-    text-align: right;
+    text-align: lefts;
     vertical-align: middle;
 }
 
 article:hover {
     border: 2px var(--selection-color) solid;
     background-color: var(--selection-bg-color);
+    box-shadow: 5px 5px 5px black;
 }
 
 .article-content:hover {
