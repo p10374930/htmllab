@@ -33,33 +33,44 @@ header {
     vertical-align: middle;
 }
 
-header nav ul {
+.navmenu {
     display: inline-flex;
     list-style-type: none;
-    color:white;
+    color: white;
     margin: 5;
     padding: 20;
 }
 
-header nav li {
-   width: 60px
+.navmenu li {
+    min-width: 80px;
+    display: table-cell;
+    text-align: center;
+    font-size: large;
+    line-height: 20px;
 }
 
-header nav li a {
+.navmenu li a {
     text-decoration: none;
     color: white
 }
 
-header nav li a::hover {
-    color:yellow;
+.navmenu li:hover,
+.navmenu li:active {
+    background-color: #DCDCDC;
+    border-radius: 3px;
 }
 
-section {
+datasection {
     display: inline-flex;
     flex-wrap: wrap;
     position: relative;
     top: 105px;
     justify-content: center;
+}
+
+
+datasection article a {
+    text-decoration: none;
 }
 
 .main-content {
@@ -88,7 +99,7 @@ article {
 }
 
 .article-content {
-    height: 200px;
+    height: 150px;
     width: 100%;
     vertical-align: top;
     background-color: var(--card-color);
@@ -112,14 +123,101 @@ article {
     color: var(--article-color);
     text-align: lefts;
     vertical-align: middle;
+    border-bottom: #DCDCDC 1px solid;
+    text-transform: uppercase;
+    text-align: center;
 }
 
 article:hover {
     border: 2px var(--selection-color) solid;
     background-color: var(--selection-bg-color);
-    box-shadow: 5px 5px 5px black;
+    box-shadow: 5px 5px 5px lightgrey;
 }
 
 .article-content:hover {
     background-color: inherit;
+}
+
+.detail-nav {
+    display: inline-flex;
+    color: white;
+    list-style-type: none;
+}
+
+.detail-nav li+li:before {
+    content: "/";
+    padding: 10px;
+}
+
+tagnav ul {
+    display: inline-flex;
+    list-style-type: none;
+    justify-content: center;
+    margin: 0 auto;
+    color: black;
+    flex-wrap: wrap;
+}
+
+tagnav ul li {
+    display: table-cell;
+    text-align: center;
+    font-size: 16px;
+    line-height: 20px;
+    margin: 5px;
+}
+
+tagnav ul li a:hover {
+    background-color: black;
+    color: #fff;
+    border-radius: 3px;
+}
+
+tagnav ul li a {
+    text-decoration: none;
+}
+
+tagnav ul li+li:before {
+    content: "/";
+    padding: 10px;
+}
+
+sheetsection {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 105px;
+    width: 100vw;
+    background-color: white;
+}
+
+sheetarticle {
+    display: inline-flex;
+    flex-direction: column;
+    margin: 30px;
+    border-bottom: 1px solid #dcdcdc;
+}
+
+sarticletitle {
+    padding: 10px;
+}
+
+sarticlecontent {
+    padding: 10px;
+    border-bottom: #DCDCDC 1px solid;
+}
+
+table {
+    border: 0;
+    border-collapse: collapse;
+    border-radius: 8px;
+}
+
+th {
+    border: solid 1px darkgrey;
+}
+
+td {
+    border: solid 1px darkgrey;
+    padding: 10px;
+    margin: 0px;
 }
