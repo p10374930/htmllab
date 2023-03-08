@@ -8,6 +8,7 @@
     <meta name="description" content="The Website provides information including HTML." />
     <meta name="robots" content="nofollow, noarchive, noodp">
     <link href="dev.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -18,17 +19,17 @@
             </div>
             <nav>
                 <ul class="detail-nav">
-                    <li>HTML</li>
+                    <li><a href="index.html" target="_self">HTML</a></li>
                     <li>content section</li>
                 </ul>
             </nav>
         </header>
-        <sheetsection>
+        <div id="tag_nav">
             <tagnav>
                 <ul>
-                    <li><a href="#">address</a></li>
-                    <li><a href="#">article</a></li>
-                    <li><a href="#">aside</a></li>
+                    <li><a href="#addresstag">address</a></li>
+                    <li><a href="#articletag">article</a></li>
+                    <li><a href="#asidetag">aside</a></li>
                     <li><a href="#">footer</a></li>
                     <li><a href="#">header</a></li>
                     <li><a href="#">h1...h6</a></li>
@@ -37,15 +38,18 @@
                     <li><a href="#">section</a></li>
                 </ul>
             </tagnav>
-            <sheetarticle>
-                <sarticletitle>
-                    <h2>address tag</h2>
-                    <p>
-                        The <strong>address</strong> HTML element indicates that the enclosed HTML provides contact information for a person or people, or for an organization.
+        </div>
+
+        <sheetsection>
+            <div class="divbottomline">
+                <article-title>
+                    <h3 id="addresstag">address tag</h3>
+                </article-title>
+                <article-content>
+                    <p style="word-wrap: normal;">
+                        The <strong>address</strong> HTML element indicates that the enclosed HTML provides contact
+                        information for a person or people, or for an organization.
                     </p>
-                </sarticletitle>
-                <sarticlecontent>
-                <div>
                     <h3>Attributes</h3>
                     <p>
                         only include <strong>global attributes</strong>
@@ -60,13 +64,90 @@
                         <tbody>
                             <tr>
                                 <td>accesskey</td>
-                                <td><p>It provides a hint for generating a keyboard shortcut for the current element.</p></td>
+                                <td>
+                                    <p>It provides a hint for generating a keyboard shortcut for the current
+                                        element.</p>
+                                </td>
                             </tr>
                         </tbody>
                     </table>
-                </div>
-                </sarticlecontent>
-            </sheetarticle>
-            </section>
+                    <div>
+                        <a href="#tag_nav"><i class="fa fa-home"></i></a>
+                    </div>
+                </article-content>
+            </div>
+
+            <div class="divbottomline">
+                <article-title>
+                    <h3 id="articletag">article tag</h3>
+                </article-title>
+                <article-content>
+                    <p style="word-wrap: normal;">
+                        The <strong>address</strong> HTML element indicates that the enclosed HTML provides contact
+                        information for a person or people, or for an organization.
+                    </p>
+                    <h3>Attributes</h3>
+                    <p>
+                        only include <strong>global attributes</strong>
+                    </p>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>name</th>
+                                <th>description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>accesskey</td>
+                                <td>
+                                    <p>It provides a hint for generating a keyboard shortcut for the current
+                                        element.</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div>
+                        <a href="#tag_nav"><i class="fa fa-home"></i></a>
+                    </div>
+                </article-content>
+            </div>
+
+            <div class="divbottomline">
+                <article-title>
+                    <h3 id="asidetag">aside tag</h3>
+                </article-title>
+                <article-content>
+                    <p style="word-wrap: normal;">
+                        The <strong>address</strong> HTML element indicates that the enclosed HTML provides contact
+                        information for a person or people, or for an organization.
+                    </p>
+                    <h3>Attributes</h3>
+                    <p>
+                        only include <strong>global attributes</strong>
+                    </p>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>name</th>
+                                <th>description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>accesskey</td>
+                                <td>
+                                    <p>It provides a hint for generating a keyboard shortcut for the current
+                                        element.</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div>
+                        <a href="#tag_nav"><i class="fa fa-home"></i></a>
+                    </div>
+                </article-content>
+            </div>
+        </sheetsection>
     </div>
 </body>
